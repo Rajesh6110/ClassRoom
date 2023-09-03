@@ -1,0 +1,68 @@
+@import "../../index";
+
+.landing-page-return-wrapper {
+  padding: 7vh 2vw;
+  overflow: hidden;
+}
+
+.landing-page-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #d0d0d3;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(7px) contrast(45%) brightness(130%);
+
+  border-radius: 10px;
+  padding: 3vh 2vw;
+}
+
+.landing-page-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+
+  h1 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: 'Roboto', cursive;
+    font-size: 1.2rem;
+  }
+}
+
+.hero-image {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .landing-page-hero {
+    flex-direction: column-reverse;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .landing-page-hero-left {
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .landing-page-hero-left {
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

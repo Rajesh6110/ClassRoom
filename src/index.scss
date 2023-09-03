@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$color-primary: #0F9D58;;
+$color-primary-tint: #ffffff;
+$color-primary-shade: #4a4e53;
+$color-accent: #086317;
+$color-accent-shade: #361108;
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.awesome-link {
+  width: fit-content;
+
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .15s;
+
+  &:hover {
+    color: green;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1200px) {
+  .awesome-link {
+    margin: auto;
+  }
+}
+
+// removed the universal styles for anchor and h5 tag from here
+// as they may cause problems further down the road.

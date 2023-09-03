@@ -1,0 +1,155 @@
+@import "src/index";
+
+.nav-return-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  border: 1px solid #d0d0d3;
+  padding: 5px 2vw 5px 2vw;
+  margin: 0;
+
+
+  img {
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 2px;
+  }
+
+  #logo {
+    height: 50px;
+    border-radius: 0;
+  }
+
+  a {
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    color: $color-primary-shade;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  span {
+    font-family: 'Comic Neue', cursive;
+    font-size: 18px;
+    margin-right: 3px;
+    margin-top: 3px;
+    font-weight: bolder;
+  }
+
+  .sign-button {
+    font-family: 'Comic Neue', cursive;
+  }
+}
+
+.brand-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  span {
+    font-size: 25px;
+  }
+}
+
+.nav-right-wrapper {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+
+  button {
+    width: 35px;
+    height: 35px;
+    border-width: 2px;
+    border-radius: 35px;
+    font-family: 'Oswald', cursive;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.search-body-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.search-container {
+  position: fixed;
+  width: 30vw;
+  top: 10px;
+  left: 35vw;
+  z-index: 11;
+
+  .search-control-wrapper {
+    display: flex;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1.5px solid black;
+    width: 50vw;
+    height: 40vh;
+    z-index: 11;
+    position: fixed;
+    left: 25vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+
+  #name {
+    display: none;
+  }
+  .sign-button {
+    font-size: 10px;
+    width: 50px;
+    height: 30px;
+  }
+  .search-btn {
+    width: 35px;
+    height: 32px;
+    padding: 0;
+  }
+  .nav-return-wrapper {
+    padding: 4px 2vw;
+
+    img {
+      height: 35px;
+    }
+
+    #logo {
+      height: 45px;
+    }
+
+    a {
+      font-family: 'Comic Neue', cursive;
+      font-size: 25px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .brand-container {
+      gap: 10px;
+    }
+  }
+  .search-container {
+    display: none;
+  }
+}
