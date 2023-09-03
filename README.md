@@ -13,11 +13,7 @@ by the institution together with their Google Drive.
 
 ## Run Locally
 
-Clone the project
-
-```bash
-  git clone https://github.com/Suman-Jaiswal/drive
-```
+Clond tye project 
 
 Go to the project directory
 
